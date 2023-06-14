@@ -1,0 +1,99 @@
+$gray: #525967;
+$green: #56B563;
+$black: #26282C;
+$font: 'Public Sans', sans-serif;
+
+*
+{
+  font-family: $font;
+}
+
+section
+{
+  width: 530px;
+  height: 667px;
+  background-color: #525967;
+  box-shadow: 1px -2px 1900px -80px;
+  display: grid;
+  grid-template-rows: 22% auto;
+  border-radius: 18px;
+
+
+  main
+  {
+
+    background-color: $gray;
+    margin: 20px;
+    box-shadow: inset 4px 4px 20px -10px;
+
+
+    text-align: end;
+    overflow: auto hidden;
+
+
+    h4
+    {
+      font-size: 24px;
+      color: #fff;
+    }
+
+    h1
+    {
+      font-size: 60px;
+      color: $green;
+    }
+
+  }
+
+
+
+  .M
+  {
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    place-content: center;
+    column-gap: 35px;
+    row-gap: 27px;
+
+    button
+    {
+      width: 70px;
+      height: 70px;
+      box-shadow: 3px 2px 20px -7px rgba(0, 0, 0, 0.24);
+      border: none;
+      border-radius: 50%;
+
+
+      span
+      {
+        font-size: 30px;
+      }
+
+    }
+
+
+    button:active
+    {
+      transform: scale(0.98);
+      box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    }
+
+  }
+
+
+
+}
+
+.green_bg
+{
+  background-color: #56B563;
+  color: #fff;
+}
+
+.white_bg
+{
+  background-color: #fff;
+  color: $black;
+}
+

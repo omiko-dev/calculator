@@ -1,0 +1,30 @@
+
+
+<section>
+
+  <main>
+    <h4>{{ Result }}</h4>
+
+    <h1>{{ numResult != 0 ? numResult : ''}}</h1>
+  </main>
+
+
+  <div class="M">
+
+    <ng-container *ngFor="let i of arr">
+      <button [ngClass]="white.includes(i) ? 'green_bg' : 'white_bg'" (click)="tastCreater(i)">
+        <span>{{ i }}</span>
+      </button>
+    </ng-container>
+
+    <button class="green_bg" style="width: 100%;  border-radius: 50px; grid-column: 3/5;" (click)="calculator()">
+      <span>=</span>
+    </button>
+
+  </div>
+
+</section>
+
+
+
+
